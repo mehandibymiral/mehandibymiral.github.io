@@ -1,0 +1,107 @@
+.ftlabel {
+	display: block;
+	padding: 5px 25px 5px 10px;
+	margin: 1px 2px 1px 2px;
+	cursor: pointer;
+	background: #5e5e69;
+	border-radius: 3px;
+	color: #FFF;
+ transition: ease .5s;
+	position: relative;
+	width: auto;
+	float: left;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 0.1px;
+}
+label:hover {
+	background: #2d2d35;
+}
+ label.ftlabel::after {
+ content: '+';
+ font-size: 17px;
+ font-weight: bold;
+ position: absolute;
+ right: 7px;
+ top: 1px;
+}
+ input:checked + label::after {
+ content: '-';
+ right: 14px;
+ top: 3px;
+}
+.content {
+	background: #2d2d35;
+	padding: 10px 25px;
+	border: 1px solid #A7A7A7;
+	margin: 0 0 1px 0;
+	border-radius: 3px;
+	float: left;
+}
+input + label + .content {
+	display: none;
+}
+input:checked + label + .content {
+	display: block;
+}
+.read-less-location input {
+	display: none;
+}
+.headlocinr {
+	margin: 15px 0 10px 0;
+	font-family: 'Montserrat', sans-serif;
+	color: #ffb500;
+	border-left: 2px solid #fff;
+	padding: 0 0 0 10px;
+	font-size: 12px;
+	text-align: justify;
+	text-transform: uppercase;
+}
+.loctxtinr {
+	line-height: 1.8em;
+	font-size: 10px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.loctxtinr a {
+	color: #fff;
+	text-decoration: none;
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects;
+	font-weight: 500;
+}
+.colg12 {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	position: relative;
+	width: 100%;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+.colg3 {
+	width: 22.3%;
+	float:left;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.loctxtinr {
+	line-height: 2em;
+	font-size: 12px !important;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+
+
+@media (max-width: 767px) {
+	
+	.colg3 {
+    width: 100%;
+
+}
+}
